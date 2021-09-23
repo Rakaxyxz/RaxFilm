@@ -93,7 +93,7 @@ async def startvideo(client, m: Message):
     replied = m.reply_to_message
     if not replied:
         if len(m.command) < 2:
-            await m.reply("💡 **reply to video or provide youtube/live video url to start video streaming**")
+            await m.reply("💡 **WOE ngentot babi lu harus balas video atau berikan url youtube/video langsung untuk memulai streaming video**")
         else:
             livelink = m.text.split(None, 1)[1]
             chat_id = m.chat.id
@@ -113,7 +113,7 @@ async def startvideo(client, m: Message):
                 return
             process = raw_converter(livelink, f'audio{chat_id}.raw', f'video{chat_id}.raw')
             FFMPEG_PROCESS[chat_id] = process
-            msg = await m.reply("🔁 **starting video streaming...**")
+            msg = await m.reply("🔁 **Memulai streaming Video Tetapi Bukan Bokep yaa Tolol...**")
             await asyncio.sleep(10)
             try:
                 audio_file = f'audio{chat_id}.raw'
@@ -187,7 +187,7 @@ async def startvideo(client, m: Message):
             await msg.edit(f"🚫 **error** | `{e}`")
             await idle()
     else:
-        await m.reply("💭 please reply to video or video file to stream")
+        await m.reply("💭 please ngentot lu reply dlu kalo mao streaming ntar jadi wadidaw")
 
 
 @Client.on_message(command(["vstop", f"vstop@{Veez.BOT_USERNAME}"]) & filters.group & ~filters.edited)
@@ -204,7 +204,7 @@ async def stopvideo(client, m: Message):
                 print(e)
                 pass
         await call_py.leave_group_call(chat_id)
-        await m.reply("✅ **successfully left vc !**")
+        await m.reply("✅ **Sukses Keluar Voice Chat!**")
     except Exception as e:
         await m.reply(f"🚫 **error** | `{e}`")
 
@@ -221,7 +221,7 @@ async def chstream(client, m: Message):
     replied = m.reply_to_message
     if not replied:
         if len(m.command) < 2:
-            await m.reply("💡 **reply to video or provide youtube/live video url to start video streaming**")
+            await m.reply("💡 **balas video atau berikan url youtube/video langsung untuk memulai streaming video**")
         else:
             livelink = m.text.split(None, 1)[1]
             chat_id = Veez.CHANNEL
