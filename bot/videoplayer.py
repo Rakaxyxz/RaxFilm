@@ -140,9 +140,9 @@ async def startvideo(client, m: Message):
                     stream_type=StreamType().local_stream,
                 )
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/0faaa780ae861fb780814.png",
+                    photo="https://telegra.ph/file/c4a3506d32e389a362168.png",
                     reply_markup=keyboard,
-                    caption=f"💡 **video streaming started!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{convert_seconds(duration)} m`\n\n» **join to video chat on the top to watch the video.**")
+                    caption=f"💡 **video streaming DIMULAI GC NONTON NOBAR CEFATT!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{convert_seconds(duration)} m`\n\n» **join to video chat on the top to watch the video.**")
                 return await msg.delete()
                 await idle()
             except Exception as e:
@@ -179,9 +179,9 @@ async def startvideo(client, m: Message):
                 stream_type=StreamType().local_stream,
             )
             await m.reply_photo(
-                photo="https://telegra.ph/file/bca4f149e798092846230.png",
+                photo="https://telegra.ph/file/c4a3506d32e389a362168.png",
                 reply_markup=keyboard,
-                caption=f"💡 **video streaming started !**\n\n» **join to video chat on the top to watch the video.**")
+                caption=f"💡 **video streaming Dimulai ngentot!**\n\n» **join to video chat on the top to watch the video.**")
             return await msg.delete()
         except Exception as e:
             await msg.edit(f"🚫 **error** | `{e}`")
@@ -241,7 +241,7 @@ async def chstream(client, m: Message):
                 return
             process = raw_converter(livelink, f'audio{chat_id}.raw', f'video{chat_id}.raw')
             FFMPEG_PROCESS[chat_id] = process
-            msg = await m.reply("🔁 **starting video streaming...**")
+            msg = await m.reply("🔁 **Mulai Video streamin Anjing...**")
             await asyncio.sleep(10)
             try:
                 audio_file = f'audio{chat_id}.raw'
