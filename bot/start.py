@@ -37,43 +37,43 @@ async def _human_time_duration(seconds):
 async def start(_, m: Message):
     if m.chat.type == "private":
         await m.reply_text(
-            f"✨ **Hello there, I am a telegram group video streaming bot.**\n\n💭 **I was created to stream videos in group "
-            f"video chats easily.**\n\n❔ **To find out how to use me, please press the help button below** 👇🏻",
+            f"✨ **Hello Ngentot, Gua bot Video Streaming Group Telegram.**\n\n💭 **Gua dibuat Untuk Video Streamin group "
+            f"video chat dengan mudah.**\n\n❔ **Untuk Mengetahui Cara Menggunakan Gua bot Canggih Ini Silahkan Tekan Panduan Yang dibawah yaa babu** 👇🏻",
             reply_markup=InlineKeyboardMarkup(
                 [[
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{Veez.BOT_USERNAME}?startgroup=true")
+                        "➕ TAMBAHIN BOT KE GRUP LU ➕", url=f"https://t.me/{Veez.BOT_USERNAME}?startgroup=true")
                 ], [
                     InlineKeyboardButton(
-                        "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                        "❔ CARA MENGGUNAKAN BOT STREAM PATEN INI", callback_data="cbguide")
                 ], [
                     InlineKeyboardButton(
-                        "🌐 Terms & Condition", callback_data="cbinfo")
+                        "🌐 SYARAT DAN KETENTUAN", callback_data="cbinfo")
                 ], [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/VeezSupportGroup"),
+                        "💬 Group", url="https://t.me/joinsiniiajg"),
                     InlineKeyboardButton(
-                        "📣 Channel", url="https://t.me/levinachannel")
+                        "📣 Channel", url="https://t.me/RaxsStory")
                 ], [
                     InlineKeyboardButton(
-                        "👩🏻‍💻 Developer", url="https://t.me/dlwrml")
+                        "👩🏻‍💻 Developer", url="https://t.me/ImThelastKingMs")
                 ], [
                     InlineKeyboardButton(
-                        "📚 All Command List", callback_data="cblist")
+                        "📚 Semua Daftar Perintah", callback_data="cblist")
                 ]]
             ))
     else:
-        await m.reply_text("**✨ bot is online now ✨**",
+        await m.reply_text("**✨ bot Sedang Online Sekarang ✨**",
                            reply_markup=InlineKeyboardMarkup(
                                [[
                                    InlineKeyboardButton(
-                                       "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                                       "❔ CARA MENGGUNAKAN BOT CANGGIH INI", callback_data="cbguide")
                                ], [
                                    InlineKeyboardButton(
-                                       "🌐 Search Youtube", switch_inline_query='')
+                                       "🌐 Cari Di Youtube", switch_inline_query='')
                                ], [
                                    InlineKeyboardButton(
-                                       "📚 Command List", callback_data="cblist")
+                                       "📚 Daftar Perintah", callback_data="cblist")
                                ]]
                            )
                            )
@@ -85,15 +85,15 @@ async def alive(_, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        f"""✅ **bot is running**\n<b>💠 **uptime:**</b> `{uptime}`""",
+        f"""✅ **bot sedang berjalan**\n<b>💠 **uptime:**</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "✨ Group", url=f"https://t.me/VeezSupportGroup"
+                        "✨ Grup", url=f"https://t.me/joinsiniiajg"
                     ),
                     InlineKeyboardButton(
-                        "📣 Channel", url=f"https://t.me/levinachannel"
+                        "📣 Channel", url=f"https://t.me/Raxsstory"
                     )
                 ]
             ]
@@ -107,7 +107,7 @@ async def ping_pong(_, m: Message):
     m_reply = await m.reply_text("pinging...")
     delta_ping = time() - sturt
     await m_reply.edit_text(
-        "🏓 `PONG!!`\n"
+        "😎 `Anjing!!`\n"
         f"⚡️ `{delta_ping * 1000:.3f} ms`"
     )
 
