@@ -28,7 +28,7 @@ async def text_to_speech(_, message: Message):
         return await message.reply_text("💡 reply to some text...")
     if not message.reply_to_message.text:
         return await message.reply_text("💡 reply to some text...")
-    m = await message.reply_text("🔁 processing...")
+    m = await message.reply_text("🔁 SABAR KONTOL LAGI PROSES BUSET...")
     text = message.reply_to_message.text
     try:
         loop = get_running_loop()
