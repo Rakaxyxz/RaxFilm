@@ -1,4 +1,4 @@
-<h2 align="centre">VIDEO STREAM BOT</h2>
+<h2 align="centre">RAKA VIDEO STREAM BOT</h2>
 
 telegram bot project for streaming video on telegram video chat, powered by [py-tgcalls](https://github.com/pytgcalls/pytgcalls) and [pyrogram](https://github.com/pyrogram/pyrogram)
 
@@ -14,7 +14,7 @@ telegram bot project for streaming video on telegram video chat, powered by [py-
     <a href="https://github.com/levina-lab/video-stream/network/members"> <img src="https://img.shields.io/github/stars/levina-lab/video-stream?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
 </p>
 
-## ✨ Features
+## ✨ FITUR
 - Stable video streaming
 - Clear video & audio quality
 - Support youtube live streaming
@@ -28,7 +28,7 @@ telegram bot project for streaming video on telegram video chat, powered by [py-
 - Song downloader feature
 - Have many other interesting features
 
-## 🛠 Commands:
+## 🛠 PERINTAH:
 - ``/vplay`` (reply to video/give yt url) - to start video streaming
 - ``/vstop`` - to stop video streaming
 - ``/song`` (song name) - to download song
@@ -53,7 +53,7 @@ telegram bot project for streaming video on telegram video chat, powered by [py-
 
 TAP THIS: [![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@levinalab/StringSession#main.py)
 
-## 💜 Deploy To Heroku
+## 💜 Deploy DI HEROKU
 The easy way to host this bot, deploy to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/levina-lab/video-stream)
@@ -166,7 +166,7 @@ jobs:
 
 # Special Credits 💖
 
-- [Levina](https://github.com/Rakaxyxz) ``Dev``
+- [RAKAXYXZ](https://github.com/Rakaxyxz) ``Dev``
 - [Sammy-XD](https://github.com/Sammy-XD) ``Dev``
 - [Zxce3](https://github.com/Zxce3) ``Dev``
 - [DoellBarr](https://github.com/DoellBarr) ``Dev``
