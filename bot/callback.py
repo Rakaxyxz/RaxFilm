@@ -37,24 +37,24 @@ async def cbstart(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton(
-                    "➕ Add me to your Group ➕", url=f"https://t.me/{Veez.BOT_USERNAME}?startgroup=true")
+                    "➕ TAMBAHKAN GUA KE GRUP ANDA ➕", url=f"https://t.me/{Veez.BOT_USERNAME}?startgroup=true")
             ], [
                 InlineKeyboardButton(
-                    "❔ HOW TO USE THIS BOT", callback_data="cbguide")
+                    "❔ BAGAIMANA MENGGUNAKAN BOT INI ", callback_data="cbguide")
             ], [
                 InlineKeyboardButton(
-                    "🌐 Terms & Condition", callback_data="cbinfo")
+                    "🌐 syarat dan ketentuan ", callback_data="cbinfo")
             ], [
                 InlineKeyboardButton(
-                    "💬 Group", url=f"https://t.me/{Veez.GROUP_NAME}"),
+                    "💬 Grup", url=f"https://t.me/{Veez.GROUP_NAME}"),
                 InlineKeyboardButton(
                     "📣 Channel", url=f"https://t.me/{Veez.CHANNEL_NAME}")
             ], [
                 InlineKeyboardButton(
-                    "🧙🏻‍♂️ Owner", url=f"https://t.me/{Veez.OWNER_NAME}")
+                    "🧙🏻‍♂️ PEMILIK", url=f"https://t.me/{Veez.OWNER_NAME}")
             ], [
                 InlineKeyboardButton(
-                    "📚 All Command List", callback_data="cblist")
+                    "📚 SEMUA DAFTAR PERINTAH", callback_data="cblist")
             ]]
         ))
 
@@ -62,7 +62,7 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbinfo"))
 async def cbinfo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🌐 **bot information !**
+        f"""🌐 **bot informasi !**
 
 🤖 __This bot was created to stream video in telegram group video chats using several methods from WebRTC.__
 
@@ -71,7 +71,7 @@ Client Library and Framework in Pure Python for Users and Bots.__
 
 👨🏻‍💻 __Thanks to the developers who participated in the development of this bot, the list of devs can be seen below:__
 
-👩🏻‍✈️ » [Levina Shavila](https://github.com/levina-lab)
+👩🏻‍✈️ » [MUHAMMAD RAKA FIQIANSYAH](https://github.com/Rakaxyxz)
 🤵🏻 » [Sammy-XD](https://github.com/Sammy-XD)
 🤵🏻 » [Zxce3](https://github.com/Zxce3)
 🤵🏻 » [Tofik Denianto](https://github.com/tofikdn)
@@ -91,7 +91,7 @@ __This bot licensed under GNU-GPL 3.0 License__""",
 @Client.on_callback_query(filters.regex("cblist"))
 async def cblist(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""📚 All Command List:
+        f"""📚 semua daftar perintah:
 
 » /vplay (reply to video or yt/live url) - to stream video
 » /vstop - stop the video streaming
@@ -101,7 +101,7 @@ async def cblist(_, query: CallbackQuery):
 » /vjoin - invite assistant join to your group
 » /vleave - order assistant leave from your group
 
-🎊 FUN CMD:
+🎊 CMD SERU:
 
 » /asupan - check it by yourself
 » /chika - check it by yourself
@@ -109,7 +109,7 @@ async def cblist(_, query: CallbackQuery):
 » /truth - check it by yourself
 » /dare - check it by yourself
 
-🔰 EXTRA CMD:
+🔰 KELEBIHAN CMD:
 
 » /tts (reply to text) - text to speech
 » /alive - check bot alive status
