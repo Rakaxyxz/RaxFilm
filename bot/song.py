@@ -28,7 +28,7 @@ from helpers.decorators import humanbytes
 @Client.on_message(command(["song", f"song@{Veez.BOT_USERNAME}"]) & ~filters.channel)
 def song(_, message):
     query = " ".join(message.command[1:])
-    m = message.reply("🔎 finding song...")
+    m = message.reply("🔎 menemukan suara...")
     ydl_ops = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -41,7 +41,7 @@ def song(_, message):
         duration = results[0]["duration"]
 
     except Exception as e:
-        m.edit("❌ song not found.\n\nplease give a valid song name.")
+        m.edit("❌ Woe ngento lagu tidak di temukan coba lagi anda belum beruntung.")
         print(str(e))
         return
     m.edit("📥 downloading...")
