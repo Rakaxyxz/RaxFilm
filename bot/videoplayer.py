@@ -142,7 +142,7 @@ async def startvideo(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/c4a3506d32e389a362168.png",
                     reply_markup=keyboard,
-                    caption=f"💡 **video streaming DIMULAI GC NONTON NOBAR CEFATT!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{convert_seconds(duration)} m`\n\n» **join to video chat on the top to watch the video.**")
+                    caption=f"💡 **video streaming DIMULAI GC NONTON NOBAR CEFATT!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{convert_seconds(duration)} m`\n\n» **join ngentot udah mulai.**")
                 return await msg.delete()
                 await idle()
             except Exception as e:
@@ -152,7 +152,7 @@ async def startvideo(client, m: Message):
         msg = await m.reply("📥 downloading video...")
         video = await client.download_media(m.reply_to_message)
         chat_id = m.chat.id
-        await msg.edit("🔁 **preparing video...**")
+        await msg.edit("🔁 **persiapan video...**")
         os.system(f"ffmpeg -i '{video}' -f s16le -ac 1 -ar 48000 'audio{chat_id}.raw' -y -f rawvideo -r 20 -pix_fmt yuv420p -vf scale=640:360 'video{chat_id}.raw' -y")
         try:
             audio_file = f'audio{chat_id}.raw'
